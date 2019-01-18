@@ -6,7 +6,7 @@ const publicPath = path.join(__dirname, '..', '..', 'client', 'build');
 app.use(express.static(publicPath));
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/*', function(req, res, next) {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
 
